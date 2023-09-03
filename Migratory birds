@@ -1,0 +1,8 @@
+def migratoryBirds(arr):
+    # Write your code here
+    count = [0] * 6
+    
+    for bird in arr:
+        count[bird] += 1
+    
+    return count.index(max(count))
